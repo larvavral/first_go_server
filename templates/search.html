@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple server</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="../static/css/search.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../static/js/search.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Search page</h1>
+        <br>
+        <div class="login-help">
+            <a href="./logout">Logout</a>
+        </div>
+        <br>
+        <div id="custom-search-input">
+            <div class="input-group col-md-12">
+                <input type="text" id="search-box" class="search-query form-control" placeholder="Search" />
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">
+                        <span class=" glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <table id="result">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="result-data">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

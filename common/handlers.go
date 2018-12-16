@@ -47,7 +47,7 @@ func LoginHandler(response http.ResponseWriter, request *http.Request) {
 	var dbPassword string
 	err := db.QueryRow("SELECT Username, Password FROM Users WHERE Username=?", username).Scan(&dbUsername, &dbPassword)
 	if err != nil {
-		http.Redirect(response, request, "/login?retry=1", 301)
+		response.Write([]byte("Wrong username or password!"))
 		return
 	}
 

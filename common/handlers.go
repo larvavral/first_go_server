@@ -29,7 +29,6 @@ func LoadFile(fileName string) (string, error) {
 }
 
 func LoginPageHandler(response http.ResponseWriter, request *http.Request) {
-	fmt.Println("123")
 	var body, _ = LoadFile("templates/login.html")
 	fmt.Fprintf(response, body)
 }
